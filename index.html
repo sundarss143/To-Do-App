@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>To-Do App</h1>
+
+    <!-- Form (better than plain input + button) -->
+    <form id="taskForm">
+      <label for="taskInput" class="visually-hidden">Task</label>
+      <input 
+        type="text" 
+        id="taskInput" 
+        placeholder="Enter a task" 
+        autocomplete="off"
+      >
+      <button type="submit" id="addBtn">Add</button>
+    </form>
+
+    <!-- Future feature buttons (optional) -->
+    <div class="controls">
+      <button id="showAll">All</button>
+      <button id="showCompleted">Completed</button>
+      <button id="showPending">Pending</button>
+      <button id="clearAll">Clear All</button>
+    </div>
+
+    <!-- Task List -->
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

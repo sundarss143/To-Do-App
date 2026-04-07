@@ -1,0 +1,19 @@
+body {
+  font-family: Arial;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+li {
+  list-style: none;
+  margin: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
