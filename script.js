@@ -1,6 +1,5 @@
-// =======================
 // 1. Select DOM elements
-// =======================
+
 const form = document.getElementById("taskForm");
 const input = document.getElementById("taskInput");
 const taskList = document.getElementById("taskList");
@@ -10,23 +9,20 @@ const showCompletedBtn = document.getElementById("showCompleted");
 const showPendingBtn = document.getElementById("showPending");
 const clearAllBtn = document.getElementById("clearAll");
 
-// =======================
 // 2. State
-// =======================
+
 let tasks = [];
 let currentFilter = "all";
 
-// =======================
 // 3. Load tasks on start
-// =======================
+
 window.onload = () => {
   loadTasks();
   renderTasks();
 };
 
-// =======================
+
 // 4. Event Listeners
-// =======================
 
 // Form submit (Add task)
 form.addEventListener("submit", (e) => {
@@ -57,9 +53,8 @@ clearAllBtn.addEventListener("click", () => {
   renderTasks();
 });
 
-// =======================
 // 5. Add Task
-// =======================
+
 function addTask() {
   const text = input.value.trim();
   if (!text) return;
@@ -74,9 +69,8 @@ function addTask() {
   input.value = "";
 }
 
-// =======================
 // 6. Render Tasks
-// =======================
+
 function renderTasks() {
   taskList.innerHTML = "";
 
@@ -140,16 +134,15 @@ function renderTasks() {
   });
 }
 
-// =======================
 // 7. Save Tasks
-// =======================
+
 function saveTasks() {
   localStorage.setItem("tasks", JSON.stringify(tasks));
 }
 
-// =======================
+
 // 8. Load Tasks
-// =======================
+
 function loadTasks() {
   const data = localStorage.getItem("tasks");
   tasks = data ? JSON.parse(data) : [];
