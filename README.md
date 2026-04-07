@@ -11,7 +11,7 @@ This project helps users manage daily tasks efficiently.
 * ✅ Mark tasks as completed
 * ❌ Delete tasks
 * 📌 Simple and clean UI
-* ⚡ Fast and lightweight (no frameworks)
+* ⚡ Fast and lightweight 
 
 ---
 
@@ -45,11 +45,6 @@ todo-app/
 
 ---
 
-## 🌐 Live Demo
-
-(Add this later if you deploy using GitHub Pages)
-
----
 
 ## 📸 Screenshot
 
