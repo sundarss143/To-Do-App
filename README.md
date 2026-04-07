@@ -54,6 +54,7 @@ todo-app/
 ## 📸 Screenshot
 
 (Add a screenshot of your app here)
+<img width="1366" height="768" alt="Screenshot (9)" src="https://github.com/user-attachments/assets/295102f8-48a8-4876-b26a-104fe0396afd" />
 
 ---
 
